@@ -1,0 +1,28 @@
+---
+name: "Discussion / Question / Suggestion"
+description: Discussion / Question / Suggestion on WSL2 Rolling Release Kernel 
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please [search for existing issues](https://github.com/Nevuly/WSL2-Rolling-Issues/issues) before creating a new one.
+
+
+- type: dropdown
+  attributes:
+    label: Type
+    description: |
+      Please select create issue type.
+    options:
+      - "Discussion"
+      - "Question"
+      - "Suggestion"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Textfield
+    description: Please write your Discussion / Question / Suggestion.
+  validations:
+    required: true

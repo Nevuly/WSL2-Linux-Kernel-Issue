@@ -1,0 +1,96 @@
+---
+name: "Bug Report"
+description: Report a bug on WSL2 Rolling Release Kernel
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please [search for existing issues](https://github.com/Nevuly/WSL2-Rolling-Issues/issues) before creating a new one.
+
+- type: dropdown
+  attributes:
+    label: Windows Version
+    description: |
+      Please select your Windows version.
+    options:
+      - "Windows 10"
+      - "Windows 11"
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: Kernel Release Channel
+    description: |
+      Please select your Kernel release channel.
+    options:
+      - "Stable Release"
+      - "LTS Release"
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Kernel Version
+    description: |
+      Please tell us what version of the Linux kernel you are using, or if you are using a custom kernel. 
+      You can run `uname -a` in your distro.
+    placeholder: "6.9.7"
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Distro Version
+    description: |
+      Please tell us what distro you are using (if applicable). 
+      You can get additional information about the version where possible, e.g. on Debian / Ubuntu, run `lsb_release -r`
+    placeholder: "Ubuntu 24.04"
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Other Software
+    description: If you're reporting a bug involving WSL's interaction with other applications, please tell us. What applications? What versions?
+    placeholder: |
+      Docker Desktop (Windows), version 3.2.2
+      traceroute, Version: 1:2.0.21-1
+      Visual Studio Code 1.54.3 with Remote-WSL Extension 0.54.6
+      MyCustomApplication
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Repro Steps
+    description: Please list out the steps to reproduce your bug.
+    placeholder: Your steps go here. Include relevant environmental variables or any other configuration.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: What were you expecting to see? Include any relevant examples or documentation links.
+    placeholder: If you want to include screenshots, paste them into the text area or follow up with a separate comment.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Actual Behavior
+    description: What happened instead?
+    placeholder: Include the terminal output, straces of the failing command, etc. as necessary.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Diagnostic Logs
+    description: | 
+      Please provide additional diagnostics if you can.
+      Logs helps to resolve your problem more quickly and easily.
+    placeholder: Your links to logs or other information go here.
+  validations:
+    required: false

@@ -1,0 +1,27 @@
+---
+name: "Request Feature"
+description: Request Feature on WSL2 Rolling Release Kernel
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please [search for existing issues](https://github.com/Nevuly/WSL2-Rolling-Issues/issues) before creating a new one.
+
+- type: textarea
+  attributes:
+    label: Request Feature
+    description: Please write your request.
+    placeholder: |
+      **Is your feature request related to a problem? Please describe.**
+      A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+
+      **Describe the solution you'd like**
+      A clear and concise description of what you want to happen.
+
+      **Describe alternatives you've considered**
+      A clear and concise description of any alternative solutions or features you've considered.
+
+      **Additional context**
+      Add any other context or screenshots about the feature request here.
+  validations:
+    required: true
