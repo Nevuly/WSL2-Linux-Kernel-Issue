@@ -33,7 +33,7 @@ Issues may be tagged with the following labels:
 
 **Work timeline Type**
 
- * Applied - The issue or request is accepted and applied in source code.
+ * Applied - The issue or request is fixed or accepted and applied in source code.
 
  * WIP - The issue or request is work in progress. It means I try to apply your issue or request in source code.
 
@@ -42,6 +42,8 @@ Issues may be tagged with the following labels:
  * Won't Fix - The issue or request is can't to fix. It means issue or request are not a kernel problem or WSL2 system problem.
 
  * Rejected - The issue or request is not accepted. It mean issue or request possible to make other issues. Or Spam type of issue or request also get this tag.
+
+ * Dev Tracing - The issue created by myself, and I try to tracing issue to fix.
 
 ## Closing
 
